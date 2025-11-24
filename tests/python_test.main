@@ -1,0 +1,8 @@
+#%pip install pytest
+import sys
+sys.path.append('/Workspace/Users/bmsrikanth100@gmail.com/src/')
+import pytest
+
+retcode= pytest.main(["/Workspace/Users/bmsrikanth100@gmail.com/tests/test_add_year.py"])
+
+assert retcode == 0, "the pytest invocation failed. see the log details"
